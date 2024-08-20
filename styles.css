@@ -773,7 +773,7 @@ abbr[title] {
 @media (max-width: 767px) {
     .hero-holder {
         padding: 0px 0; /* Ajuste o padding para o mobile conforme necessário */
-        margin: 20px 0; /* Adiciona uma margem vertical entre as seções */
+        margin: 0px 0; /* Adiciona uma margem vertical entre as seções */
     }
     .services-block {
         padding: 60px 0; /* Ajuste o padding para o mobile conforme necessário */
