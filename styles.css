@@ -156,7 +156,7 @@ abbr[title] {
 .hero .subheading-block {
     display: flex;
     align-items: center;
-    margin: 0 0 30px;
+    margin: 0 0 40px;
 }
 
 .hero .subheading-block .ava {
@@ -175,9 +175,10 @@ abbr[title] {
 }
 
 .hero .subheading-block .text {
+    font-size: 1.1em;
     padding: 0 0 0 10px;
-    max-width: 670px;
-    line-height: 1.8;
+    max-width: 750px;
+    line-height: 1.4;
 }
 
 .hero .subheading-block .text p {
@@ -186,7 +187,7 @@ abbr[title] {
 
 .main-action-btn {
     display: flex;
-    width: 215px;
+    width: 280px;
     flex-direction: row;
     align-items: center;
     padding: 6px;
@@ -266,7 +267,7 @@ abbr[title] {
 .services-row .service-block .title {
     display: block;
     font-size: 1.4em;
-    font-weight: normal;
+    font-weight: 600;
     margin: 0 0 20px;
 }
 
@@ -278,6 +279,7 @@ abbr[title] {
 
 .services-row .service-block ul li {
     margin: 0 0 4px;
+    font-size: 1.1em;
 }
 
 .services-row .service-block .service-block-holder {
@@ -341,7 +343,7 @@ abbr[title] {
 .process-row .process-block h5 {
     display: block;
     font-size: 1.4em;
-    font-weight: normal;
+    font-weight: 600;
     margin: 0 0 20px;
 }
 
@@ -758,3 +760,105 @@ abbr[title] {
     -webkit-animation-name: fadeOutUp;
     animation-name: fadeOutUp;
 }
+
+/* Esconder os botões apenas no mobile */
+@media (max-width: 767px) {
+    .header .action-btn,
+    .header .call-btn {
+        display: none; /* Esconde os botões em dispositivos móveis */
+    }
+}
+
+/* Adicionar espaçamento adicional para dispositivos móveis */
+@media (max-width: 767px) {
+    .hero-holder {
+        padding: 0px 0; /* Ajuste o padding para o mobile conforme necessário */
+        margin: 20px 0; /* Adiciona uma margem vertical entre as seções */
+    }
+    .services-block {
+        padding: 60px 0; /* Ajuste o padding para o mobile conforme necessário */
+        margin: 20px 0; /* Adiciona uma margem vertical entre as seções */
+    }
+    .process-block {
+        padding: 0 0 60px 0; /* Ajuste o padding para o mobile conforme necessário */
+        margin: 20px 0; /* Adiciona uma margem vertical entre as seções */
+    }
+    .contact-block {
+        padding: 40px 20px; /* Ajuste o padding para o mobile conforme necessário */
+        margin: 20px 0; /* Adiciona uma margem vertical entre as seções */
+    }
+    .footer-holder {
+        padding: 0px 0; /* Ajuste o padding para o mobile conforme necessário */
+        margin-top: 60px; /* Adiciona uma margem vertical entre as seções */
+    }
+}
+
+@media (max-width: 767px) {
+    /* HERO */
+    .hero .headline-block h2 {
+        font-size: 2.4em;
+        text-align: left;
+        padding: 0 0 0 10px;
+    }
+    .hero .subheading-block .text {
+        font-size: 1.1em;
+        padding: 0 10px 0 10px;
+        max-width: 750px;
+        line-height: 1.4;
+        text-align: left;
+    }
+    
+    .process-row .process-block p {
+        margin: 20px;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .process-row .process-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .process-row .process-block .step-h5-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .process-row .process-block .step {
+        margin-right: 10px;
+        background: #d4bfff;
+        color: #090909;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1.6em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .process-row .process-block h5 {
+        margin: 0;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    .process-row .process-block p {
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+.hero .headline-block h2 strong {
+    display: inline; /* Faz o texto forte permanecer na mesma linha */
+    white-space: nowrap; /* Evita quebra automática de linha no mobile */
+}
+
+.services-block .action-btn,
+    .services-block .call-btn {
+        font-size: 1.2em;
+    }
